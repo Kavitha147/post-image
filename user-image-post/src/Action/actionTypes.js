@@ -1,0 +1,2 @@
+export const GET_POST_SUCCESS = "GET_POST_SUCCESS";
+export const GET_IMAGE_SUCESS = "GET_IMAGE_SUCESS";
