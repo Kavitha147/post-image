@@ -18,9 +18,9 @@ function App(props) {
     dispatch(fetchImages());
   })
 
-  // if(!token){
-  //   return <LoginPage setToken={setToken} />
-  // }
+   if(!token){
+    return <LoginPage setToken={setToken} />
+   }
 
   return (
     <div className="App">
