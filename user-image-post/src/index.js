@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from "react-redux"
 import { createStore, applyMiddleware } from "redux";
@@ -8,13 +8,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import reducer from './Reducer/reducer';
 
-// const middleware = [thunk]
+
 const store = createStore(reducer, applyMiddleware(thunk));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+      <App />
     </Provider>
   </React.StrictMode>
 );
