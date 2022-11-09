@@ -38,15 +38,9 @@ function App(props) {
     dispatch(fetchImages());
   })
 
-<<<<<<< HEAD
-  if (!token) {
-    return <LoginPage setToken={setToken} />
-  }
-=======
    if(!token){
     return <LoginPage setToken={setToken} />
    }
->>>>>>> 610e8a10903cd1c3edc7916ffffd62127baf5809
 
   return (
     <div className="App">
