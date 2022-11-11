@@ -51,6 +51,7 @@ function App(props) {
           <Link to='/image-page' className='link'>Image Page</Link>
         </LinkElements>
         <Routes>
+          <Route path='/' element={<Outlet />} />
           <Route path='/post-page' element={<PostPage posts={posts} />} />
           <Route path='/image-page' element={<ImagePage images={images} />} />
         </Routes>
